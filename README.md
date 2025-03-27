@@ -31,7 +31,7 @@ Create a file named `config.json` in the root directory:
   "atak_port": 8088,
   "api_keys": [
     "your-api-key-here",
-	"your-api-key-here"
+    "your-api-key-here"
   ]
 }
 ```
