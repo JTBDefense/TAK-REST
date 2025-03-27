@@ -1,0 +1,8 @@
+{
+  "atak_host": "127.0.0.1",
+  "atak_port": 8088,
+  "api_keys": [
+    "abc123",
+    "def456"
+  ]
+}
