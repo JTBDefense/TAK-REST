@@ -7,7 +7,7 @@ This is a Python-based REST API that allows external systems to post object loca
 - FastAPI-based REST interface
 - Sends CoT XML via UDP using configurable host and port
 - Supports `person`, `car`, `helicopter`, `drone` object types
-- Optional UID and hashtag per object
+- Optional UID and remarks per object
 - API key authorization
 - All configuration is stored in a single `config.json` file
 
@@ -68,7 +68,7 @@ API documentation is available at: `http://localhost:8000/docs`
       "type": "drone",
       "lat": 52.2297,
       "lon": 21.0122,
-      "hashtag": "#search"
+      "remarks": "#search"
     },
     {
       "uid": "car-unit-001",

@@ -38,7 +38,7 @@ class CoTObject(BaseModel):
     lat: float
     lon: float
     hae: float = 0.0
-    hashtag: Optional[str] = None
+    remarks: Optional[str] = None
 
 class CoTRequest(BaseModel):
     api_key: str
@@ -77,8 +77,8 @@ def generate_cot_xml(obj: CoTObject, stale_minutes: int) -> bytes:
     detail = ET.SubElement(event, "detail")
     ET.SubElement(detail, "contact", attrib={"callsign": obj.name})
 
-    if obj.hashtag:
-        ET.SubElement(detail, "remarks").text = obj.hashtag
+    if obj.remarks:
+        ET.SubElement(detail, "remarks").text = obj.remarks
 
     return ET.tostring(event, encoding="utf-8")
 
